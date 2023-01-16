@@ -1,0 +1,289 @@
+body{
+    background-color: yellow; /*Gelber Hintergrund für die gesamte Seite*/
+}
+
+a{
+    text-decoration: none; /*Alle Links sind im Grundzustand nicht unterstrichen*/
+    color: inherit; /*Link übernimmt Farbe des jeweiligen Elements*/
+}
+
+::-webkit-scrollbar{
+    width: 10px;    /*Breite der Scrollleiste wird auf 10px gesetzt*/
+}
+   
+::-webkit-scrollbar-thumb{
+    background: rgb(85, 94, 172);   /*Farbe der Scrollleiste wird geändert*/
+    border-radius: 8px; /*Ecken der Scrollleiste werden abgerundet*/
+}
+
+/*Überschrift der Seite*/
+#header{
+    display: flex;
+    flex-direction: row-reverse; /*Überschrift der Seite wird zentriert*/
+    justify-content: center;
+}
+
+/*Überschrift der Seite*/
+#head{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Schriftart Impact wird ausgewählt*/
+    font-size: 70px;    /*Schriftgröße wird auf 70px gesetzt*/
+    color: rgb(204, 62, 37);    /*Schriftfarbe wird geändert*/        
+    margin-top: 4px;    /*Abstand zur oberen Border der Seite wird festgelegt*/
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;   /*Buchstaben der Überschrift bekommen weißen Rand (2px breit)*/
+}
+
+/*Überschrift der Seite*/
+#LosPollosLogo{ 
+    width: 98px;    /*Breite und Höhe des Los Pollos Hermanos Logo wird festgelegt*/
+    height: 95px;
+}
+
+/*Navigationsleiste*/
+.navbar{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Schriftart Impact wird ausgewählt*/
+	font-size: 25px; /*Schriftgröße wird auf 25px gesetzt*/
+    display: flex;
+    flex-direction: row;    /*Flexbox wird zum zentrieren der Links innerhalb des Kastens genutzt*/
+    justify-content: center;
+    margin-left: auto;  /*Navbar wird mit margin-left und right zentriert*/
+    margin-right: auto;     
+    margin-top: 23px;   /*Abstand zur Überschrift wird festgelegt*/
+    background-color: orange;   /*Kasten der Navbar wird orange gefärbt*/
+    width: 700px; /*Breite des Kastens wird festgelegt*/
+}
+
+/*Navigationsleiste*/
+.navbar a:hover{
+    text-decoration: underline; /*Links werden unterstrichen wenn der Mauszeiger auf ihnen liegt*/
+}
+
+/*Navigationsleiste*/
+.navbar a{
+    color: rgb(85, 94, 172);    /*Schriftfarbe der Links werden geändert*/
+}
+
+/*Navigationsleiste*/
+#nav, #nav1, #nav2{
+    margin-right: 70px; /*Abstände zwischen den Links werden gesetzt*/
+}
+
+/*Begrüßungstext*/
+#welcome{
+    font-family: Arial, Helvetica, sans-serif;  /*Schriftart Arial wird ausgewählt*/
+    color: rgb(85, 94, 172);    /*Schriftfarbe wird geändert*/
+    margin-top: 30px;   /*Abstand zur Navbar wird gesetzt*/
+    margin-bottom: 10px;    /*Abstand zum iFrame wird gesetzt*/
+    text-align: center; /*Textformat wird zentriert*/
+    display: flex;  /*Flexbox zentriert den Text*/
+    justify-content: center;    
+}
+
+/*Vorstellungsvideo*/
+#introduction{
+    width: 800px; /*Höhe und Breite des iFrames wird gesetzt*/
+    height: 480px;
+    margin-left: auto;  /*iFrame wird in die Mitte der Seite gesetzt*/
+    margin-right: auto;
+    border-style: solid;    /*iFrame bekommt gefärbten Rand*/
+    border-color: rgb(85, 94, 172);
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: orange;
+}
+
+#Sidebar{
+    position: absolute;
+    top: 220px;
+    right: 25px;
+    width: 400px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(85, 94, 172);
+    border-radius: 4px;
+}
+
+#LosPollosRadio{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 330px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#SaulGoodman{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 94, 172);
+}
+
+/*Los Pollos Hermanos Neueste Produkte*/
+#iFrameLosPollosFood{
+    transform: scale(0.75); /*Originalgräße der Seite wird um 1/4 kleiner*/
+    width: 1250px;  /*Höhe und Breite des iFrame wird gesetzt*/
+    height: 800px;
+    margin-right: auto; /*iFrame wird mit margin-right und left in die Mitte gesetzt*/
+    margin-left: auto;
+    border-style: solid;    /*Gefärbter Rand für iFrame wird erstellt*/
+    border-color: rgb(85, 94, 172);
+}
+
+/*Los Pollos Hermanos Sparmenü*/
+#LosPollosMenu{
+    width: 1200px;  /*Höhe und Breite des Elements wird gesetzt*/
+    height: 460px;
+    font-family: Arial, Helvetica, sans-serif;  /*Schriftart Arial wird ausgewählt*/
+    font-size: 30px;    /*Schriftgräße wird geändert*/
+    color: rgb(85, 94, 172);    /*Schriftfarbe wird geändert*/
+    display: flex;  /*Flexbox wird zum zentrieren des Bildes und Textes genutzt*/
+    align-items: center;
+    margin-right: auto; /*Element wird mit margin-left und right in die Mitte gesetzt*/
+    margin-left: auto;
+    margin-top: 50px;   /*Abstand zum Video wird gesetzt*/
+    margin-bottom: 80px;    /*Abstand nach unten wird gesetzt*/
+    border-style: solid;    /*Element bekommt einen gefärbten Rand*/
+    border-color: rgb(85, 94, 172);
+    border-width: 4px;  /*Breite und Abrundung des Randes werden geändert*/
+    border-radius: 6px;
+}
+
+/*Los Pollos Hermanos Sparmenü*/
+#LosPollosMenu ul{
+    list-style-position: inside;    /*Listenitems werden zentriert*/
+}
+
+/*Los Pollos Hermanos Sparmenü*/
+#LosPollosMenu li{
+    margin-bottom: 15px;    /*Abstand zwischen Listenitems wird gesetzt*/
+}
+
+/*Los Pollos Hermanos Sparmenü*/
+#LosPollosMenu img{
+    margin-left: 25px;  /*Bild des Menüs bekommt Abstand zum Rand*/
+}
+
+/*Curly Fries*/
+#LosPollosFood{
+    width: 1200px;  /*Höhe und Breite des Elements wird gesetzt*/
+    height: 360px;
+    font-family: Arial, Helvetica, sans-serif;  /*Schriftart Arial wird ausgewählt*/
+    font-size: 30px;    /*Schriftgräße wird geändert*/
+    color: rgb(85, 94, 172);    /*Schriftfarbe wird geändert*/
+    display: flex;  /*Flexbox wird zum zentrieren des Bildes und Textes genutzt*/
+    align-items: center;
+    margin-right: auto; /*Element wird mit margin-left und right in die Mitte gesetzt*/
+    margin-left: auto;
+    margin-top: 90px;   /*Abstand zum Video wird gesetzt*/
+    margin-bottom: 50px;    /*Abstand nach unten wird gesetzt*/
+    border-style: solid;    /*Element bekommt einen gefärbten Rand*/
+    border-color: rgb(85, 94, 172);
+    border-width: 4px;  /*Breite und Abrundung des Randes werden geändert*/
+    border-radius: 6px;
+}
+
+/*Curly Fries*/
+#LosPollosFood ul{
+    list-style-position: inside;    /*Listenitems werden zentriert*/
+}
+
+/*Curly Fries*/
+#LosPollosFood li{
+    margin-bottom: 15px;    /*Abstand zwischen Listenitems wird gesetzt*/
+}
+
+/*Curly Fries*/
+#LosPollosFood img{
+    margin-left: 25px;  /*Bild des Menüs bekommt Abstand zum Rand*/
+}
+
+/*Über uns*/
+#AboutUs{
+    font-size: 19px;    /*Schriftgröße wird geändert*/
+    font-family: Arial, Helvetica, sans-serif;  /*Schriftart Arial wird ausgewählt*/
+    color: rgb(85, 94, 172);    /*Schriftfarbe wird geändert*/
+    margin-top: 75px; /*Abstand zur Navbar wird gesetzt*/
+    margin-left: 85px;  /*Abstand zur linken Border wird gesetzt*/
+    display: flex;  /*Flexbox platziert die Kästen untereinander*/
+    flex-direction: column;
+    width: 1320px;  /*Breite der Kästen wird festgelegt*/
+}
+
+/*Über uns*/
+#AboutUs p{
+    margin-left: auto;  /*Text wird im Kasten zentriert*/
+    margin-right: auto;
+}
+
+/*Über uns*/
+#AboutUs a:hover{
+    text-decoration: underline; /*Link zur Frankfurt Times wird unterschrichen*/
+}
+
+/*Über uns Bilder & Text*/
+#GustavoFring, #Mike, #FilialeFFM, #Opinion{
+    border-style: solid;    /*Kästen bekommen gefärbten und abgerundeten Rand*/
+    border-radius: 8px;
+    border-color: rgb(85, 94, 172);
+    display: flex;  /*Flexbox zentriert den Text im Kasten*/
+    align-items: center;
+    text-align: center; /*Textformat wird zentriert*/
+    margin-bottom: 40px; /*Abstand zwischen den Kästen wird gesetzt*/
+}
+
+/*Karriere Text*/
+#TrainingInfo{
+    font-family: Arial, Helvetica, sans-serif;  /*Schriftart Arial wird ausgewählt*/
+    font-size: 24px;    /*Schriftgröße wird geändert*/
+    color: rgb(85, 94, 172);    /*Schriftfarbe wird geändert*/
+    text-align: center; /*Textformat wird zentriert*/
+    margin-left: auto;  /*Kasten wird mit margin-left und right in die Mitte gesetzt*/
+    margin-right: auto;
+    margin-top: 60px;   /*Abstand zur Navbar wird gesetzt*/
+    width: 840px;   /*Höhe und Breite des Kastens wird festgelegt*/
+    height: 100px;
+    border-style: solid;    /*Kasten bekommt gefärbten und abgerundeten Rand*/
+    border-color: rgb(85, 94, 172);
+    border-radius: 4px;
+    border-width: 4px;  /*Breite des Rands wird festgelegt*/
+}
+
+/*Karriere Videos*/
+.Training{
+    width: 800px;   /*Höhe und Breite des iFrames wird festgelegt*/
+    height: 480px;
+    display: flex;  /*Flexbox platziert die iFrames untereinander*/
+    flex-direction: column;
+    margin-top: 70px;   /*Abstand zum Infokasten wird gesetzt*/
+    margin-left: auto;  /*iFrames werden mit margin-left und right in die Mitte gesetzt*/
+    margin-right: auto;
+    border-style: solid;    /*iFrames bekommen einen gefärbten Rand*/
+    border-color: rgb(85, 94, 172);
+}
+
+#LosPollosMap{
+    font-family: Arial, Helvetica, sans-serif;  /*Schriftart Arial wird ausgewählt*/
+    font-size: 24px;    /*Schriftgröße wird geändert*/
+    color: rgb(85, 94, 172);    /*Schriftfarbe wird geändert*/
+    text-align: center; /*Textformat wird zentriert*/
+    margin-left: auto;  /*Kasten wird mit margin-left und right in die Mitte gesetzt*/
+    margin-right: auto;
+    margin-top: 60px;   /*Abstand zur Navbar wird gesetzt*/
+    width: 840px;   /*Höhe und Breite des Kastens wird festgelegt*/
+    height: 125px;
+    border-style: solid;    /*Kasten bekommt gefärbten und abgerundeten Rand*/
+    border-color: rgb(85, 94, 172);
+    border-radius: 4px;
+    border-width: 4px;  /*Breite des Rands wird festgelegt*/
+}
+
+#LosPollosMap img{
+    margin-top: 60px;
+    border-style: solid;
+    border-color: rgb(85, 94, 172);
+}
